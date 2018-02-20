@@ -1,8 +1,6 @@
 function [cropped] = my_crop(img)
     height = size(img, 1);
     width = size(img, 2);
-    imshow(img);
-    size(img)
     if width < height
         xLeft = 1;
         yTop = (height-width)/2;
@@ -13,7 +11,5 @@ function [cropped] = my_crop(img)
         cropped = imcrop(img,[xLeft,yTop,height-1, height]);
     else 
         cropped = img;
-    end  
-    size(cropped)
-    imshow(cropped)       
+    end       
 end

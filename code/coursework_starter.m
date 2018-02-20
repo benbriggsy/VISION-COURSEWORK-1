@@ -82,8 +82,8 @@ switch lower(FEATURE)
         % square portion out of each image. Making the tiny images zero mean and
         % unit length (normalizing them) will increase performance modestly.
         
-        train_image_feats = get_tiny_images2(train_image_paths, 16);
-        test_image_feats  = get_tiny_images2(test_image_paths, 16);
+       train_image_feats = get_tiny_images2(train_image_paths, 16);
+       test_image_feats  = get_tiny_images2(test_image_paths, 16);
     case 'colour histogram'
         %You should allow get_colour_histograms to take parameters e.g.
         %quantisation, colour space etc.
